@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap');
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+  --font-display: "Kanit", sans-serif;
+}
+
+body {
+  margin: 0;
+  
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;  /* largura da scrollbar vertical */
+  height: 8px; /* altura da scrollbar horizontal */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #27272a; /* cor de fundo da trilha */
+  border-radius: 100%;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #f97316; /* cor da "alça" da scrollbar - usando laranja como no seu botão */
+  border-radius: 100%;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #ea580c; /* cor ao passar o mouse */
+}
+
+/* Para Firefox */
+.custom-scrollbar {
+  scrollbar-width: 8px;
+  scrollbar-color: #f97316 #27272a;
+}
